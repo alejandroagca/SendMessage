@@ -1,5 +1,6 @@
 package com.example.sendmessage;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,13 +21,16 @@ public class SendMessageActivity extends AppCompatActivity {
         switch (view.getId())
         {
             case R.id.btnOK:
-
-                Bundle bundle = new Bundle();
-                bundle.putString("message",);
                 //Recoger el mensaje
                 //Crear un objeto bundle y añadir el mensaje
+                Bundle bundle = new Bundle();
+                bundle.putString("message",edtMessage.getText().toString());
                 //Crear un objeto intent
+                Intent intent = new Intent(SendMessageActivity.this,ViewMessageActivity.class);
+                //Añadir el Bundle al intent
+                intent.putExtras(bundle);
                 //Iniciar la activity view message
+                startActivity(intent);
                 break;
         }
     }
