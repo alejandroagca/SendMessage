@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SendMessage</string>
+    <string name="textview">Usuario</string>
+    <string name="textview2">Mensaje</string>
+    <string name="btnOK">OK</string>
+    <string name="title_activity_view_message">ViewMessageActivity</string>
+    <string name="txtViewUser">Un usuario te ha mandado un mensaje</string>
+    <string name="txtViewMessage">El mensaje es el siguiente</string>
+</resources>
