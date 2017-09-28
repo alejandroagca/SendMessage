@@ -7,6 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * SendMessage: Envia un mensaje desde un layout a otro
+ * @author Alejandro Aguilar
+ * @version 1.0
+ * @see android.app.Activity
+ */
+
 public class SendMessageActivity extends AppCompatActivity {
 
     private EditText edtMessage;
