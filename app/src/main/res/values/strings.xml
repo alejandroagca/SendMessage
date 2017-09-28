@@ -4,6 +4,6 @@
     <string name="textview2">Mensaje</string>
     <string name="btnOK">OK</string>
     <string name="title_activity_view_message">ViewMessageActivity</string>
-    <string name="txtViewUser">Un usuario te ha mandado un mensaje</string>
-    <string name="txtViewMessage">El mensaje es el siguiente</string>
+    <string name="txvViewUser">Un usuario te ha mandado un mensaje</string>
+    <string name="txvViewMessage">El mensaje es el siguiente</string>
 </resources>

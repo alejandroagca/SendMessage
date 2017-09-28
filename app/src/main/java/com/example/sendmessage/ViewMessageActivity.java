@@ -6,13 +6,21 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.TextView;
+
 
 public class ViewMessageActivity extends AppCompatActivity {
 
+    TextView txvViewUser;
+    TextView txvViewMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_message);
+        txvViewUser = (TextView) findViewById(R.id.txvViewUser);
+        txvViewMessage = (TextView) findViewById(R.id.txvViewMessage);
+        txvViewMessage.setText(getIntent().getExtras().getString("message"));
+        txvViewUser.setText(getIntent().getExtras().getString("user"));
     }
 
 }
