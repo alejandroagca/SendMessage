@@ -23,7 +23,7 @@ public class SendMessageActivity extends AppCompatActivity {
     private EditText edtMessage;
     private EditText edtUser;
     private Button btnOK;
-    Message mensaje;
+    public  Message mensaje;
     private static final String TAG = "com.example.sendmessage";
 
     @Override
@@ -33,10 +33,11 @@ public class SendMessageActivity extends AppCompatActivity {
         edtMessage = (EditText) findViewById(R.id.edtMessage);
         edtUser = (EditText) findViewById(R.id.edtUser);
         btnOK = (Button) findViewById(R.id.btnOK);
-        mensaje = new Message(edtMessage.getText().toString(),edtUser.getText().toString());
         //Registramos un listener al evento OnClickListener
         btnOK.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+                //Recoger el mensaje
+                mensaje = new Message(edtMessage.getText().toString(),edtUser.getText().toString());
                 //Crear un objeto bundle y añadir el mensaje
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("objeto", mensaje);
