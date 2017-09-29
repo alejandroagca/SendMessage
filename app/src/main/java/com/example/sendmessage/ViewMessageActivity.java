@@ -19,8 +19,8 @@ public class ViewMessageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_message);
         txvViewUser = (TextView) findViewById(R.id.txvViewUser);
         txvViewMessage = (TextView) findViewById(R.id.txvViewMessage);
+        txvViewUser.setText(String.format(getResources().getString(R.string.txvViewUser), getIntent().getExtras().getString("user")));
         txvViewMessage.setText(getIntent().getExtras().getString("message"));
-        txvViewUser.setText(getIntent().getExtras().getString("user"));
     }
 
 }
